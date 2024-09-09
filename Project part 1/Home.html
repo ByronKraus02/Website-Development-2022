@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Byron Kraus" />
+  <link rel="stylesheet" media="screen" href="Styling.css" />
+  <link href="pictures/Light rope exercise.png" type="rope exercise-icon" rel="icon" />
+  <!-- https://icons8.com/icon/GQpljAjAsIcd/battle-ropes -->
+  <title>Hotsprings: Weightlifting</title>
+</head>
+
+<body id="Home">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> <!-- Creates button to return to top -->
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <ul class="sidenav">
+    <li><a class="active" href="Home.html">Home</a></li>
+    <li><a href="Other pages/Workout splits.html">Workout Splits</a></li>
+    <li><a href="Other pages/Competitions.html">Competitions</a></li>
+    <li><a href="Other pages/Famous Gyms.html">Famous Gyms</a></li>
+    <li><a href="Other pages/About.html">About</a></li>
+  </ul>
+
+  <div class="content">
+    <h1>
+      Weightlifting.<br /><img src="pictures/Left bicep.png" alt="Left Bicep FLexing" width="100" height="100"
+        id="bicep" />A guide to a better you!<img src="pictures/Right bicep.png" alt="Right Bicep FLexing" width="100"
+        height="100" id="bicep" />
+    </h1>
+    <!-- https://thumbs.dreamstime.com/b/male-arms-flexed-biceps-muscles-cut-out-isolated-white-59076308.jpg -->
+
+    <h2 id="container">What is weightlifting?</h2>
+    <img src="pictures/weightlifting.png" alt="Cartoon image of people gyming" class="center" width="900"
+      height="300" />
+    <!-- https://www.rookieroad.com/img/weightlifting/weightlifting.png -->
+    <select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1"> <!-- Allows user to choose the colour of the text -->
+      <br>
+      <option value="black">black
+      <option value="orange">orange
+      <option value="flamingred">fuschia
+      <option value="lightyellow">light yellow
+      <option value="cyan">cyan
+      <option value="yellow">yellow
+      <option value="red">red
+      <option value="white">white</option>
+    </select>&nbsp;&nbsp;Text Color
+    <p>
+      Weightlifting is a competitve sport where the human body is tested by
+      lifting heavy pieces of equipment. The history of weightlifting goes
+      back as far as recorded history goes. An example of ancient
+      weightlifting is where people
+      <q>have a big rock they would try to lift, and the first one to lift it
+        would inscribe their name into the stone.</q><br />
+      Since then weightlifting has advanced incredibly, from the equipment
+      used, to the excersises created to optomise strength and muscle growth.
+      Weightlifting joined the olympics in
+      <q>1896 in the Athens Olympics Games.</q> This caused a larger attention
+      towards weightlifting and therefore turned it into a more competitve
+      sport with more people thriving to succeed in being the strongest,
+      having the best physique or just to be healthier and treat their bodies
+      better.
+      <!-- https://en.wikipedia.org/wiki/Weight_training#:~:text=Weightlifting%20was%20first%20introduced%20in,training%20gyms%20of%20the%20time. -->
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Byron Kraus" />
+  <link rel="stylesheet" media="screen" href="../Styling.css" />
+  <link href="../pictures/Light rope exercise.png" type="rope exercise-icon" rel="icon" />
+  <!-- https://icons8.com/icon/GQpljAjAsIcd/battle-ropes -->
+  <title>Hotsprings: Weightlifting | Famous Gyms</title>
+</head>
+
+<body id="Famous Gyms">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <ul class="sidenav">
+    <li><a href="../Home.html">Home</a></li>
+    <li><a href="Workout splits.html">Workout Splits</a></li>
+    <li><a href="Competitions.html">Competitions</a></li>
+    <li><a class="active" href="Famous Gyms.html">Famous Gyms</a></li>
+    <li><a href="About.html">About</a></li>
+  </ul>
+
+  <div class="content">
+    <marquee>Gyms in the Western Cape: THE POWER MILL, Body20 Eikestad, Planet
+      Fitness Brackenfall, Virgin Active, F45 Training Somerset West, Ignite
+      fitness, HIIVE Fitness, CEY Crossfit, Body Future Gym.</marquee>
+    <h1>Famous Gyms across the world</h1>
+    <select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+      <br>
+      <option value="black">black
+      <option value="orange">orange
+      <option value="flamingred">fuschia
+      <option value="lightyellow">light yellow
+      <option value="cyan">cyan
+      <option value="yellow">yellow
+      <option value="red">red
+      <option value="white">white</option>
+    </select>&nbsp;&nbsp;Text Color
+    <p>
+      A good gym can make the difference between having a nice gym session or
+      a bad one. The top 10 gyms in the world are:
+    </p>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1. Equinox Group (USA, Canada, and London)</div>
+        <img src="../pictures/gym 1.jpeg" alt="Equinox Group" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2. The Houstonian Hotel, Club, and Spa (Texas, USA)</div>
+        <img src="../pictures/gym 2.jpg" alt="The Houstonian Hotel, Club, and Spa" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3. La Belle Équipe (Paris)</div>
+        <img src="../pictures/gym 3.jpg" alt="La Belle Équipe" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4. Virgin Active (Tanjong Pagar, Singapore)</div>
+        <img src="../pictures/gym 4.jpg" alt="Virgin Active (Tanjong Pagar, Singapore)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5. Titan Fitness (Sydney, Australia)</div>
+        <img src="../pictures/gym 5.jpg" alt="Titan Fitness (Sydney, Australia)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6. The Burrow (Kuwait)</div>
+        <img src="../pictures/gym 6.jpg" alt="The Burrow (Kuwait)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7. Anytime Fitness (Woodbury, Minnesota, United States)</div>
+        <img src="../pictures/gym 7.jpg" alt="Anytime Fitness (Woodbury, Minnesota, United States)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8. Big Tex Gym (Austin, Texas)</div>
+        <img src="../pictures/gym 8.jpg" alt="Big Tex Gym (Austin, Texas)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9. Gold's Gym (Dallas, USA)</div>
+        <img src="../pictures/gym 9.jpg" alt="Gold's Gym (Dallas, USA)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10. Embody Fitness (Dubai, United Arab Emirates)</div>
+        <img src="../pictures/gym 10.jpg" alt="Embody Fitness (Dubai, United Arab Emirates)" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000);
+      }
+    </script>
+  </div>
+</body>
+</html>

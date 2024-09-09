@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Byron Kraus" />
+    <link rel="stylesheet" media="screen" href="../Styling.css" />
+    <link href="../pictures/Light rope exercise.png" type="rope exercise-icon" rel="icon" />
+    <!-- https://icons8.com/icon/GQpljAjAsIcd/battle-ropes -->
+    <title>Hotsprings: Weightlifting | About</title>
+  </head>
+
+<body id="About">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <ul class="sidenav">
+    <li><a href="../Home.html">Home</a></li>
+    <li><a href="Workout splits.html">Workout Splits</a></li>
+    <li><a href="Competitions.html">Competitions</a></li>
+    <li><a href="Famous Gyms.html">Famous Gyms</a></li>
+    <li><a class="active" href="About.html">About</a></li>
+  </ul>
+
+  <div class="content">
+    <h1>About me</h1>
+    <img src="../pictures/Bicep selfie.jpg" alt="Bicep selfie" width="350" height="500" /><img
+      src="../pictures/Tricep selfie.jpg" alt="Tricep selfie" width="350" height="500" /><img
+      src="../pictures/Selfie.jpg" alt="selfie" width="500" height="500" />
+      <select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+        <br>
+        <option value="black">black
+        <option value="orange">orange
+        <option value="flamingred">fuschia
+        <option value="lightyellow">light yellow
+        <option value="cyan">cyan
+        <option value="yellow">yellow
+        <option value="red">red
+        <option value="white">white</option>
+      </select>&nbsp;&nbsp;Text Color
+      <address>
+      <p>
+        Hi, my name is Byron Kraus, I am an avid gym and workout fan, I love
+        to excersise. If you have any queries or questions regarding my
+        website please contact me below:<br />
+        Contact me:
+        <span class="tel"><a href="tel:+27-079-241-5005">(079) 241-5005</a></span><br />
+        Email me: <a href="mailto:24694274@sun.ac.za">Byron Kraus</a><br />
+        Address: 9 Soeteweide Rd, Stellenbosch, PO Box 7600
+      </p>
+    </address>
+  </div>
+</body>
+</html>
